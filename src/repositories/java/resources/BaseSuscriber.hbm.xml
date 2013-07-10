@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="components.java.Subscriber" table="subscriber" schema="public" catalog="editorial">
+        <id name="subscriberid" column="subscriberid">
+            <generator class="increment"/>
+        </id>
+        <property name="subscriberFirstName" column="subscriber_first_name"/>
+        <property name="subscriberLastName" column="subscriber_last_name"/>
+        <property name="address" column="address"/>
+        <property name="postalcode" column="postalcode"/>
+        <property name="city" column="city"/>
+        <property name="state" column="state"/>
+        <property name="country" column="country"/>
+    </class>
+</hibernate-mapping>
